@@ -1,0 +1,101 @@
+.investment-calculator{
+    font-family: "Roboto", sans-serif;
+    width: 600px;
+    margin: 24px auto;
+    background: #fff;
+    box-shadow: 0 12px 50px -11px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    color: rgb(0, 0, 0); 
+    overflow: hidden;
+}
+
+.investment-calculator, .investment-calculator * {
+    box-sizing: border-box;
+}
+
+.investment-calculator .top {
+    background-color: #B5D43B;
+    color: #434738;
+    padding: 30px;
+}
+
+.investment-calculator .top h2 {
+    margin-top: 0;
+}
+
+.investment-calculator form {
+    display: flex;
+    gap: 8px;
+    justify-content: space-between;
+}
+
+.investment-calculator .title {
+    margin-bottom: 16px;
+}
+
+.investment-calculator form input {
+    font-size: 20px;
+    padding: 8px 24px;
+    width: 100%;
+}
+
+.investment-calculator .result {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;    
+}
+
+.investment-calculator .result .left {
+    width: 100%;
+    padding: 8px 32px;
+}
+
+.investment-calculator .left h3 {
+    font-size: 16px;
+    font-weight: 400;
+    margin-bottom: 8px;
+}
+
+.investment-calculator .left .value {
+    font-size: 30px;
+    font-weight: 900;
+    padding-bottom: 10px;
+    border-bottom: 1px solid rgba(20, 33, 61, 0.2);    
+}
+
+.investment-calculator .result .value::before {
+    content: "₹";
+    font-size: 24px;
+    font-weight: 400;
+    margin-right: 6px;
+    opacity: 0.4;
+}
+.investment-calculator .calculate-btn {
+    background-color: rgb(255, 58, 58);
+    color: #fff;
+    border: none;
+    padding: 8px 32px;
+    border-radius: 7px;
+    font-size: 18px;
+    font-weight: 900;
+    cursor: pointer;
+    margin: 24px 0;
+}
+
+@media (max-width: 650px) {
+    .investment-calculator {
+        width: 90%;
+        max-width: 500px;
+    }
+
+    .investment-calculator form {
+        flex-direction: column;
+        gap: 20px;
+    }
+    
+    .investment-calculator .result {
+        flex-direction: column;
+        text-align: center  ;
+    }
+
+}
